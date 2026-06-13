@@ -39,6 +39,9 @@
 html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
+    /* Clip horizontal overflow at the root so AOS slide-in animations and
+       Bootstrap negative-gutter rows can't create horizontal scroll on mobile. */
+    overflow-x: hidden;
 }
 
 body {
@@ -48,6 +51,8 @@ body {
     color: var(--tt-text);
     background: var(--tt-lighter);
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
 }
 
 img {
