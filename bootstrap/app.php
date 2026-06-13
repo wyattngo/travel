@@ -12,6 +12,10 @@ return Application::configure(basePath: dirname(__DIR__))
         channels: __DIR__.'/../routes/channels.php',
     )
     ->withMiddleware(function (Middleware $middleware) {
+        // Trust the reverse proxy (aaPanel/nginx → Docker) so X-Forwarded-Proto/Host
+        // are honoured and HTTPS is detected correctly.
+        $middleware->trustProxies(at: '*');
+
         // Global middleware
         $middleware->web(append: [
             \App\Http\Middleware\EncryptCookies::class,
