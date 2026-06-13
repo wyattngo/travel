@@ -1,6 +1,6 @@
 @props([
-    'title' => 'ToursTravel Kenya - Discover Amazing Destinations',
-    'description' => 'Explore Kenya and beyond with ToursTravel. Curated destinations, expert guides, and unforgettable experiences await.',
+    'title' => 'AuraTravel Kenya - Discover Amazing Destinations',
+    'description' => 'Explore Kenya and beyond with AuraTravel. Curated destinations, expert guides, and unforgettable experiences await.',
     'image' => asset('images/og-image.jpg'),
     'type' => 'website',
     'url' => url()->current(),
@@ -17,7 +17,7 @@
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $description }}">
 <meta property="og:image" content="{{ $image }}">
-<meta property="og:site_name" content="ToursTravel Kenya">
+<meta property="og:site_name" content="AuraTravel Kenya">
 <meta property="og:locale" content="en_US">
 
 <!-- Twitter -->
@@ -29,7 +29,7 @@
 
 <!-- Additional SEO -->
 <meta name="robots" content="index, follow">
-<meta name="author" content="ToursTravel Kenya">
+<meta name="author" content="AuraTravel Kenya">
 <link rel="canonical" href="{{ $url }}">
 
 <!-- JSON-LD Structured Data -->
@@ -38,7 +38,7 @@
 {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
-    "name": "ToursTravel Kenya",
+    "name": "AuraTravel Kenya",
     "description": "{{ $description }}",
     "url": "{{ url('/') }}",
     "logo": "{{ asset('images/logo.png') }}",

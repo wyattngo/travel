@@ -27,7 +27,7 @@ class BlogController extends Controller
     public function store(CreateBlogRequest $request)
     {
         // upload image
-        $image = $request->image->store('blogs');
+        $image = $request->image->store('blogs', 'public');
         // create post
         $destination = Blog::create([
             'title' => $request->title,
@@ -75,7 +75,7 @@ class BlogController extends Controller
         if ($request->hasFile('image')) {
 
             // upload and delete
-            $image = $request->image->store('blogs');
+            $image = $request->image->store('blogs', 'public');
 
             $blog->deleteImage();
 

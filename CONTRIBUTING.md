@@ -1,6 +1,6 @@
-# Contributing to ToursTravel Kenya
+# Contributing to AuraTravel Kenya
 
-Thank you for your interest in contributing to ToursTravel Kenya! This document provides guidelines and instructions for contributing.
+Thank you for your interest in contributing to AuraTravel Kenya! This document provides guidelines and instructions for contributing.
 
 ## Code of Conduct
 

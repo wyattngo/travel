@@ -44,8 +44,12 @@ class Destinations extends Model
             return asset($this->image);
         }
 
-        // Otherwise it's in storage
-        return asset('storage/'.$this->image);
+        // Stored on the public disk — fall back to a placeholder if missing.
+        if (Storage::disk('public')->exists($this->image)) {
+            return asset('storage/'.$this->image);
+        }
+
+        return asset('images/destination-2.jpg');
     }
 
     protected $casts = [
@@ -61,7 +65,7 @@ class Destinations extends Model
      */
     public function deleteImage()
     {
-        Storage::delete($this->image);
+        Storage::disk('public')->delete($this->image);
     }
 
     public function category()

@@ -1,6 +1,6 @@
 @extends('layouts.front')
 
-@section('title', 'Sign In - ToursTravel Kenya')
+@section('title', 'Sign In - AuraTravel Kenya')
 
 @section('page')
 <div class="tt-auth-bg">
@@ -51,7 +51,7 @@
             </button>
 
             <div class="text-center my-3">
-                <small class="text-muted">New to ToursTravel Kenya?</small>
+                <small class="text-muted">New to AuraTravel Kenya?</small>
             </div>
 
             <a href="{{ route('register') }}" class="btn-tt-outline w-100 text-center d-block">
@@ -60,7 +60,7 @@
         </form>
 
         <div class="text-center mt-4">
-            <small class="text-muted">&copy; {{ date('Y') }} ToursTravel. Experience Kenya differently.</small>
+            <small class="text-muted">&copy; {{ date('Y') }} AuraTravel. Experience Kenya differently.</small>
         </div>
     </div>
 </div>

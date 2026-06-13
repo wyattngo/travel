@@ -161,7 +161,7 @@
 
 			<div class="col-lg-6" data-aos="fade-left">
 				<div class="tt-section-header">
-					<div class="tt-pretitle">Why Choose ToursTravel</div>
+					<div class="tt-pretitle">Why Choose AuraTravel</div>
 					<h2 class="tt-title">Experience Kenya with <span class="accent">Local Experts</span></h2>
 					<p class="tt-subtitle">
 						As proud Kenyans, we don't just show you destinations — we share our homeland with you.
@@ -232,7 +232,7 @@
 					<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
 				</div>
 				<p class="tt-testimonial-text">
-					"ToursTravel showed us the real Kenya. From wildlife safaris to cultural villages,
+					"AuraTravel showed us the real Kenya. From wildlife safaris to cultural villages,
 					every experience felt authentic and meaningful. Highly recommend!"
 				</p>
 				<div class="tt-testimonial-author">

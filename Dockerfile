@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 #
-# Self-contained production image for ToursTravel Kenya (Laravel 11).
+# Self-contained production image for AuraTravel Kenya (Laravel 11).
 # One image runs nginx + php-fpm (via supervisor); migrations + caching happen
 # on container start. Build context is trimmed via .dockerignore.
 #

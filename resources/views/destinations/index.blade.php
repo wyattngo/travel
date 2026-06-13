@@ -23,7 +23,7 @@
                 @foreach ($destinations as $destinations)
                 <tr>
                     <td>
-                        <img src="{{ asset('/storage/' . $destinations->image) }}" class="img-thumb" alt="{{ $destinations->title }}">
+                        <img src="{{ $destinations->image_url }}" class="img-thumb" alt="{{ $destinations->title }}">
                     </td>
                     <td><strong>{{ $destinations->title }}</strong></td>
                     <td>

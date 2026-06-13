@@ -1,4 +1,4 @@
-# Hướng dẫn deploy ToursTravel Kenya lên server
+# Hướng dẫn deploy AuraTravel Kenya lên server
 
 Ứng dụng Laravel 11, đóng gói Docker sẵn — lên server **chỉ cần 1 lệnh**.
 

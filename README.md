@@ -1,4 +1,4 @@
-# ToursTravel Kenya
+# AuraTravel Kenya
 
 [![Tests](https://github.com/muchaisam/Tours-Travel/actions/workflows/tests.yml/badge.svg)](https://github.com/muchaisam/Tours-Travel/actions/workflows/tests.yml)
 [![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?logo=php&logoColor=white)](https://php.net)

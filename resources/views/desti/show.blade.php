@@ -1,6 +1,6 @@
 @extends('layouts.front')
 
-@section('title', $destinations->title . ' - ToursTravel Kenya')
+@section('title', $destinations->title . ' - AuraTravel Kenya')
 
 @section('page')
 @include('partials.navbar')

@@ -37,7 +37,7 @@
                 @foreach($wishlisted as $destination)
                     <div class="col-md-4 ftco-animate">
                         <div class="destination">
-                            <a href="{{ route('desti.show', $destination) }}" class="img d-flex justify-content-center align-items-center" style="background-image: url('{{ asset('storage/' . $destination->image) }}');">
+                            <a href="{{ route('desti.show', $destination) }}" class="img d-flex justify-content-center align-items-center" style="background-image: url('{{ $destination->image_url }}');">
                                 <div class="icon d-flex justify-content-center align-items-center">
                                     <span class="icon-search2"></span>
                                 </div>

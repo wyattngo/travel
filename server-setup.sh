@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# server-setup.sh — turnkey setup & operations for ToursTravel Kenya (Docker).
+# server-setup.sh — turnkey setup & operations for AuraTravel Kenya (Docker).
 #
 # On a FRESH server, one command does everything:
 #     ./server-setup.sh bootstrap
@@ -278,7 +278,7 @@ cmd_destroy() {
 }
 
 cmd_bootstrap() {
-    log "=== Bootstrapping ToursTravel Kenya on this server ==="
+    log "=== Bootstrapping AuraTravel Kenya on this server ==="
     cmd_install_docker
     cmd_env
     cmd_deploy
@@ -288,7 +288,7 @@ cmd_bootstrap() {
 
 usage() {
     cat <<EOF
-ToursTravel Kenya — server setup & operations
+AuraTravel Kenya — server setup & operations
 
 Usage: $0 <command> [args]
 

@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# ToursTravel Kenya - Railway Deployment Script
+# AuraTravel Kenya - Railway Deployment Script
 # This script handles the deployment process for Railway
 
-echo "🚀 Starting ToursTravel Kenya deployment..."
+echo "🚀 Starting AuraTravel Kenya deployment..."
 
 # Set production environment
 export APP_ENV=production

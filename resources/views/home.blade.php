@@ -6,7 +6,7 @@
     <div class="row align-items-center">
         <div class="col-md-8">
             <h2><i class="fas fa-hand-wave me-2"></i> Welcome back, {{ Auth::user()->name }}!</h2>
-            <p>Manage your ToursTravel Kenya platform from this dashboard</p>
+            <p>Manage your AuraTravel Kenya platform from this dashboard</p>
         </div>
         <div class="col-md-4 text-md-end">
             <span class="date-badge">

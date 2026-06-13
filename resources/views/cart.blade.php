@@ -1,6 +1,6 @@
 @extends('layouts.front')
 
-@section('title', 'Shopping Cart - ToursTravel Kenya')
+@section('title', 'Shopping Cart - AuraTravel Kenya')
 
 @section('page')
 @include('partials.navbar')
@@ -37,7 +37,7 @@
 					<div class="tt-cart-item">
 						<div class="tt-cart-col-product">
 							<div class="d-flex align-items-center gap-3">
-								<img src="{{ $destinations->image ? asset('storage/' . $destinations->image) : asset('images/destination-1.jpg') }}"
+								<img src="{{ $destinations->image_url }}"
 									 alt="{{ $destinations->title }}" class="tt-cart-img">
 								<div>
 									<h6 class="mb-1">{{ $destinations->title }}</h6>

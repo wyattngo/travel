@@ -1,6 +1,6 @@
 @extends('layouts.front')
 
-@section('title', 'Verify Email - ToursTravel Kenya')
+@section('title', 'Verify Email - AuraTravel Kenya')
 
 @section('page')
 <div class="tt-auth-bg">
@@ -36,7 +36,7 @@
         </div>
 
         <div class="text-center mt-4">
-            <small class="text-muted">&copy; {{ date('Y') }} ToursTravel. Secure email verification.</small>
+            <small class="text-muted">&copy; {{ date('Y') }} AuraTravel. Secure email verification.</small>
         </div>
     </div>
 </div>

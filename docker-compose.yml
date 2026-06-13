@@ -1,4 +1,4 @@
-# One-command production deploy for ToursTravel Kenya.
+# One-command production deploy for AuraTravel Kenya.
 #
 #   docker compose up -d --build
 #

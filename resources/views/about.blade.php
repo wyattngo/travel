@@ -1,6 +1,6 @@
 @extends('layouts.front')
 
-@section('title', 'About Us - ToursTravel Kenya')
+@section('title', 'About Us - AuraTravel Kenya')
 
 @section('page')
 @include('partials.navbar')
@@ -31,7 +31,7 @@
 				<div class="tt-pretitle">Our Story</div>
 				<h2 class="tt-title mb-3">Born in Kenya, <span class="accent">Sharing with the World</span></h2>
 				<p>
-					ToursTravel began as a dream to share Kenya's incredible beauty with the world.
+					AuraTravel began as a dream to share Kenya's incredible beauty with the world.
 					As local Kenyans, we know the secret spots, the authentic cultural experiences,
 					and the breathtaking landscapes that make our country truly magical.
 				</p>
@@ -99,7 +99,7 @@
 	<div class="container">
 		<div class="tt-section-header text-center" data-aos="fade-up">
 			<div class="tt-pretitle">What Makes Us Different</div>
-			<h2 class="tt-title">Why Choose <span class="accent">ToursTravel</span></h2>
+			<h2 class="tt-title">Why Choose <span class="accent">AuraTravel</span></h2>
 			<p class="tt-subtitle">As local Kenyans, we offer authentic experiences you won't find anywhere else.</p>
 		</div>
 		<div class="row g-4">

@@ -1,6 +1,6 @@
 @extends('layouts.front')
 
-@section('title', 'Blog - ToursTravel Kenya')
+@section('title', 'Blog - AuraTravel Kenya')
 
 @section('page')
 @include('partials.navbar')
@@ -35,14 +35,14 @@
 			@foreach ($blogs as $blog)
 			<article class="tt-blog-card" data-aos="fade-up" data-aos-delay="{{ ($loop->iteration % 3) * 100 }}">
 				<div class="tt-blog-card-img">
-					<img src="{{ asset('images/bali.jpeg') }}" alt="{{ $blog->title }}" loading="lazy">
+					<img src="{{ $blog->image_url }}" alt="{{ $blog->title }}" loading="lazy">
 					<span class="badge-cat">{{ $blog->category->name ?? 'Travel' }}</span>
 					<span class="badge-read"><i class="fas fa-clock me-1"></i>5 min</span>
 				</div>
 				<div class="tt-blog-card-body">
 					<div class="tt-blog-card-meta">
 						<span><i class="fas fa-calendar-alt"></i> {{ $blog->created_at ? $blog->created_at->format('M d, Y') : 'Recent' }}</span>
-						<span><i class="fas fa-user"></i> ToursTravel Team</span>
+						<span><i class="fas fa-user"></i> AuraTravel Team</span>
 					</div>
 					<h3 class="tt-blog-card-title">
 						<a href="#">{{ $blog->title }}</a>

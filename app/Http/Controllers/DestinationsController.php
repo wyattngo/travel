@@ -44,7 +44,7 @@ class DestinationsController extends Controller
     public function store(CreateDestinationsRequest $request)
     {
         // upload image
-        $image = $request->image->store('destinations');
+        $image = $request->image->store('destinations', 'public');
         // create post
         $destination = Destinations::create([
             'title' => $request->title,
@@ -106,7 +106,7 @@ class DestinationsController extends Controller
         if ($request->hasFile('image')) {
 
             // upload and delete
-            $image = $request->image->store('destinations');
+            $image = $request->image->store('destinations', 'public');
 
             $destination->deleteImage();
 

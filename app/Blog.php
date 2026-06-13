@@ -22,13 +22,38 @@ class Blog extends Model
     ];
 
     /**
+     * Resolve a usable image URL, falling back to a placeholder when the file
+     * is missing (e.g. seed data) so the UI never shows a broken image.
+     */
+    public function getImageUrlAttribute(): string
+    {
+        $fallback = asset('images/place-1.jpg');
+
+        if (! $this->image) {
+            return $fallback;
+        }
+
+        // Image referenced directly from the public/ directory.
+        if (str_starts_with($this->image, 'images/')) {
+            return asset($this->image);
+        }
+
+        // Stored on the public disk (storage/app/public → /storage).
+        if (Storage::disk('public')->exists($this->image)) {
+            return asset('storage/'.$this->image);
+        }
+
+        return $fallback;
+    }
+
+    /**
      * delete image from storage
      *
      * @return void
      */
     public function deleteImage()
     {
-        Storage::delete($this->image);
+        Storage::disk('public')->delete($this->image);
     }
 
     public function category()

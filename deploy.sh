@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# One-command deploy for ToursTravel Kenya.
+# One-command deploy for AuraTravel Kenya.
 # Builds the self-contained image and starts app + database.
 set -euo pipefail
 cd "$(dirname "$0")"

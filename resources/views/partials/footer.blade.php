@@ -6,7 +6,7 @@
 			<div class="col-lg-4">
 				<div class="d-flex align-items-center gap-2 mb-3">
 					<div class="brand-icon"><i class="fas fa-globe-africa"></i></div>
-					<h4 class="mb-0">Tours<span class="brand-accent" style="color:var(--tt-accent)">Travel</span></h4>
+					<h4 class="mb-0">Aura<span class="brand-accent" style="color:var(--tt-accent)">Travel</span></h4>
 				</div>
 				<p class="mb-3">
 					Your trusted local guide to Kenya's most incredible destinations.
@@ -62,7 +62,7 @@
 		<div class="tt-footer-bottom">
 			<div class="row align-items-center">
 				<div class="col-md-6">
-					<p>&copy; {{ date('Y') }} ToursTravel Kenya. All rights reserved.</p>
+					<p>&copy; {{ date('Y') }} AuraTravel Kenya. All rights reserved.</p>
 				</div>
 				<div class="col-md-6 text-md-end">
 					<a href="#" class="me-3">Privacy Policy</a>

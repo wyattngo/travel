@@ -5,7 +5,7 @@
 			<div class="brand-icon">
 				<i class="fas fa-globe-africa"></i>
 			</div>
-			<span>Tours<span class="brand-accent">Travel</span></span>
+			<span>Aura<span class="brand-accent">Travel</span></span>
 		</a>
 
 		<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#ttNav"

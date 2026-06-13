@@ -1,6 +1,6 @@
 @extends('layouts.front')
 
-@section('title', 'Contact Us - ToursTravel Kenya')
+@section('title', 'Contact Us - AuraTravel Kenya')
 
 @section('page')
 @include('partials.navbar')
@@ -191,8 +191,8 @@
 function initMap() {
 	const loc = { lat: -1.3067, lng: 36.8156 };
 	const map = new google.maps.Map(document.getElementById('map'), { zoom: 15, center: loc });
-	const marker = new google.maps.Marker({ position: loc, map, title: 'ToursTravel Kenya', animation: google.maps.Animation.DROP });
-	const info = new google.maps.InfoWindow({ content: '<div style="padding:.75rem"><strong>ToursTravel Kenya</strong><br>Ole Sangale Road, Nairobi<br><span style="color:var(--tt-primary)">+254 712 345 678</span></div>' });
+	const marker = new google.maps.Marker({ position: loc, map, title: 'AuraTravel Kenya', animation: google.maps.Animation.DROP });
+	const info = new google.maps.InfoWindow({ content: '<div style="padding:.75rem"><strong>AuraTravel Kenya</strong><br>Ole Sangale Road, Nairobi<br><span style="color:var(--tt-primary)">+254 712 345 678</span></div>' });
 	marker.addListener('click', () => info.open(map, marker));
 }
 </script>

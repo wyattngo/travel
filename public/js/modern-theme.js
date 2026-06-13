@@ -1,5 +1,5 @@
 /**
- * ToursTravel Kenya - Modern Theme JavaScript
+ * AuraTravel Kenya - Modern Theme JavaScript
  * Dark Mode Toggle & UI Enhancements
  */
 

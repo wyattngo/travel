@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Admin Dashboard - ToursTravel Kenya</title>
+    <title>Admin Dashboard - AuraTravel Kenya</title>
 
     <!-- Fonts & Icons -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -26,7 +26,7 @@
         <div class="container-fluid px-4">
             <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
                 <span class="brand-dot"><i class="fas fa-globe-africa"></i></span>
-                <span>Tours<span class="brand-accent">Travel</span> Admin</span>
+                <span>Aura<span class="brand-accent">Travel</span> Admin</span>
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                 data-bs-target="#adminNav" aria-controls="adminNav" aria-expanded="false">

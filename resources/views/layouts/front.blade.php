@@ -8,8 +8,8 @@
     @hasSection('seo')
         @yield('seo')
     @else
-        <title>ToursTravel - Discover Amazing Destinations in Kenya</title>
-        <meta name="description" content="Explore Kenya and beyond with ToursTravel. Curated destinations, expert guides, and unforgettable experiences await.">
+        <title>AuraTravel - Discover Amazing Destinations in Kenya</title>
+        <meta name="description" content="Explore Kenya and beyond with AuraTravel. Curated destinations, expert guides, and unforgettable experiences await.">
     @endif
 
     <!-- Fonts -->

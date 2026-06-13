@@ -1,6 +1,6 @@
 @extends('layouts.front')
 
-@section('title', 'Forgot Password - ToursTravel Kenya')
+@section('title', 'Forgot Password - AuraTravel Kenya')
 
 @section('page')
 <div class="tt-auth-bg">

@@ -1,4 +1,4 @@
-# ToursTravel Kenya - robots.txt
+# AuraTravel Kenya - robots.txt
 # https://tours-travel.railway.app
 
 User-agent: *
