@@ -1,0 +1,21 @@
+# ToursTravel Kenya - Railway Nixpacks Configuration
+# Optimized for Laravel 11 with PHP 8.2
+
+[phases.setup]
+nixPkgs = ["php82", "php82Packages.composer", "php82Extensions.pdo", "php82Extensions.pdo_mysql", "php82Extensions.mysqli", "php82Extensions.mbstring", "php82Extensions.bcmath", "php82Extensions.gd", "php82Extensions.intl", "php82Extensions.zip", "php82Extensions.exif", "php82Extensions.opcache", "nodejs-18_x", "npm-9_x"]
+
+[phases.install]
+cmds = [
+    "composer update --no-dev --optimize-autoloader --no-interaction",
+    "npm install"
+]
+
+[phases.build]
+cmds = [
+    "npm run production",
+    "php artisan config:cache",
+    "php artisan view:cache"
+]
+
+[start]
+cmd = "php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=$PORT"

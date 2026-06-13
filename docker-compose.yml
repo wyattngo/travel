@@ -1,0 +1,41 @@
+# One-command production deploy for ToursTravel Kenya.
+#
+#   docker compose up -d --build
+#
+# Brings up the self-contained app image (nginx + php-fpm) and a MySQL database.
+# Migrations + first-run seeding run automatically on container start.
+# Configuration/secrets live in .env.docker.
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: travelvanlang:latest
+    restart: unless-stopped
+    env_file:
+      - .env.docker
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${APP_PORT:-8000}:80"
+    volumes:
+      - app-uploads:/var/www/html/storage/app/public
+
+  db:
+    image: mysql:8.0
+    restart: unless-stopped
+    env_file:
+      - .env.docker
+    volumes:
+      - db-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
+
+volumes:
+  db-data:
+  app-uploads:

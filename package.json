@@ -1,0 +1,20 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "build": "npm run production",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "axios": "^1.8.2",
+        "bootstrap": "^5.3.3",
+        "cross-env": "^7.0.3",
+        "laravel-mix": "^6.0.42",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.77.6",
+        "sass-loader": "^16.0.4"
+    }
+}
