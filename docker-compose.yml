@@ -18,7 +18,11 @@ services:
       db:
         condition: service_healthy
     ports:
-      - "${APP_PORT:-8000}:80"
+      # Bound to 127.0.0.1 only: reachable by the host's reverse proxy
+      # (aaPanel/nginx) but NOT exposed on the public IP. Uncommon high port to
+      # avoid clashing with other PHP sites. Override with APP_PORT in .env.docker.
+      # (To expose it directly on all interfaces, drop the "127.0.0.1:" prefix.)
+      - "127.0.0.1:${APP_PORT:-8419}:80"
     volumes:
       - app-uploads:/var/www/html/storage/app/public
 

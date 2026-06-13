@@ -23,6 +23,13 @@ if [ -f "$CADDY_OVERRIDE" ]; then
     export COMPOSE_FILE="docker-compose.yml:${CADDY_OVERRIDE}"
 fi
 
+# Make APP_PORT from .env.docker authoritative for compose's port mapping
+# (compose variable substitution doesn't read env_file, only the shell env).
+if [ -f "$ENV_FILE" ]; then
+    _app_port="$(grep -E '^APP_PORT=' "$ENV_FILE" | head -1 | cut -d= -f2- | tr -d '[:space:]')"
+    [ -n "$_app_port" ] && export APP_PORT="$_app_port"
+fi
+
 ASSUME_YES="${ASSUME_YES:-false}"
 
 # ---------------------------------------------------------------- logging ----
